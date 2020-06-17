@@ -10,7 +10,7 @@ The core of `giggle-singularity` is the configuration file, which should have fo
 - `DATA_PATTERN`: regex to find bed files inside DATA_PATH (default "\*.bed.gz")
 - `INDEX_PATH`: directory to store the index.
 
-Although the script supports relative paths (like in the sample config file), it's strongly encouraged to use absolute paths in the config files to avoid unexpected behaviour.
+Although the script supports relative paths to some extent (like in the sample data), it's strongly encouraged to use absolute paths in the config files to avoid unexpected behaviour.
 
 Open a terminal in the repository folder, and inspect the sample configuration:
 
@@ -23,7 +23,7 @@ DATA_PATTERN="*.bed.gz"
 INDEX_PATH="sample_data/indices/sample_index"
 ```
 ## 1. `check`
-Now lets check that the prerequisites to run the script are present on the system:
+Now let's check that the prerequisites to run the script are present on the system:
 
 ```bash
 ./giggle.sh check -C sample_data/config.ini
@@ -56,7 +56,7 @@ Now, `check` is asking for that folder that will contain the index exists, and a
 
 ## 2. `pull`
 
-We are going to download the `giggle-docker` container and transform it to a `singularity` one with the command pull:
+We are going to download the `giggle-docker` container and transform it to a Singularity one with the command `pull`:
 
 ```bash
 mkdir sample_data/indices
