@@ -3,7 +3,7 @@ Tools for running GIGGLE (https://www.nature.com/articles/nmeth.4556) on a Singu
 
 A common issue with HPC facilities is the restriction to install new software without admin permissions. [Singularity](https://github.com/hpcng/singularity) is an open source solution that allows *untrusted users to run untrusted containers in a trusted way*. This project is built on top of the projects [GIGGLE](https://github.com/ryanlayer/giggle) and [giggle-docker](https://github.com/kubor/giggle-docker).
 
-The only prerequisite is to have `singularity` on the `$PATH`. `giggle-singularity` wraps `giggle index` and `giggle search` to facilitate the binding to directories outside Singularity's filesystem scope.
+The only prerequisite is to have `singularity` 3.0+ on the `$PATH`. `giggle-singularity` wraps `giggle index` and `giggle search` to facilitate the binding to directories outside Singularity's filesystem scope.
 By setting up a configuration file, when applicable, this bindings will happen automatically:
 - `/mnt/D` points to the folder containing the bgzipped bed files.
 - `/mnt/I` points to the parent directory of the index.
