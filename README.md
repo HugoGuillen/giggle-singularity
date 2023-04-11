@@ -16,7 +16,7 @@ By setting up a configuration file, when applicable, these bindings will happen 
 There are 5 options in `giggle.sh`: `check`, `pull`, `shell`, `index`, and `search`. You can see the help of each one with the option `-h`.
 
 ### check
-Verifies GIGGLE and Singularity's configuration. **Note:** don't run any other command until there are no errors in `check`!
+Verifies GIGGLE and Singularity's configuration. **Note:** don't run any other command until there are no errors in `check`or the program won't work as intended.
 
 ```
 usage:
